@@ -1,0 +1,465 @@
+.units {
+  background: #0c0f1c;
+  overflow-x: hidden;
+  .enUnits {
+    * {
+      z-index: 8;
+      position: relative;
+    }
+    .topDiv {
+      padding: 0px 260px;
+      margin-bottom: 180px;
+      position: relative;
+      padding-top: 250px;
+
+      &::before {
+        content: "";
+        width: 864px;
+        height: 864px;
+        display: inline-block;
+        position: absolute;
+        left: -500px;
+        bottom: -300px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+      }
+      h1 {
+        max-width: 564px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 98px;
+        color: #ffffff;
+        margin-top: 37px;
+        margin-bottom: 47px;
+      }
+      p {
+        max-width: 664px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 45px;
+
+        color: #ffffff;
+      }
+    }
+    .lineDiv {
+      margin-bottom: 200px;
+      &::before {
+        content: "";
+        width: 675px;
+        height: 675px;
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+        bottom: 300px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+    }
+    .myUnits {
+      .unit {
+        padding: 200px 260px;
+        background: #0c0f1c;
+        height: 100vh;
+        width: 100%;
+        img {
+          width: 50%;
+          height: auto;
+          margin-left: 20px;
+          max-height: 100%;
+        }
+        h2 {
+          max-width: 530px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 80px;
+          line-height: 98px;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+        p {
+          max-width: 653px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+
+          color: #ffffff;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: #0094ff;
+          margin-top: 18px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .whiteBack {
+        background-color: #ffffff;
+        h2 {
+          color: #0c0f1c;
+        }
+        p {
+          color: #0c0f1c;
+        }
+      }
+    }
+    .unitFooter {
+      margin-top: 180px;
+    }
+  }
+  .faUnits {
+    * {
+      z-index: 8;
+      position: relative;
+      direction: rtl;
+      text-align: right;
+    }
+    .topDiv {
+      padding: 0px 260px;
+      margin-bottom: 180px;
+      padding-top: 250px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 864px;
+        height: 864px;
+        display: inline-block;
+        position: absolute;
+        right: -200px;
+        bottom: -300px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+      }
+      h1 {
+        max-width: 564px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 98px;
+        color: #ffffff;
+        margin-top: 37px;
+        margin-bottom: 47px;
+      }
+      p {
+        max-width: 664px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+      }
+    }
+    .scroll {
+      padding: 0px 260px;
+      margin-bottom: 50px;
+      .scrollTitle {
+        font-weight: 400;
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .scrollIcon {
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        height: 50px;
+        width: 28px;
+        margin-left: 12px;
+        padding: 0px 10px;
+        .scrollCircle {
+          display: inline-block;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          background-color: white;
+        }
+      }
+    }
+    .lineDiv {
+      margin-bottom: 200px;
+      &::before {
+        content: "";
+        width: 675px;
+        height: 675px;
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        bottom: 250px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+    }
+    .myUnits {
+      .unit {
+        padding: 200px 260px;
+        background: #0c0f1c;
+        width: 100%;
+        height: 100vh;
+        img {
+          width: 50%;
+          height: auto;
+          max-height: 100vh;
+        }
+        h2 {
+          max-width: 530px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 38px;
+          line-height: 65px;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+        p {
+          max-width: 653px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+
+          color: #ffffff;
+          margin-left: 20px;
+        }
+        a {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          color: #0094ff;
+          margin-top: 18px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .whiteBack {
+        background-color: #ffffff;
+        h2 {
+          color: #0c0f1c;
+        }
+        p {
+          color: #0c0f1c;
+        }
+      }
+    }
+    .unitFooter {
+      margin-top: 180px;
+    }
+  }
+}
+@media only screen and (max-width: 1679px) {
+  .units {
+    .faUnits {
+      .topDiv {
+        padding: 250px 100px 0px 100px;
+      }
+      .scroll {
+        padding: 0px 100px;
+      }
+      .myUnits {
+        .unit {
+          padding: 200px 100px;
+        }
+      }
+    }
+    .enUnits {
+      .topDiv {
+        padding: 250px 100px 0px 100px;
+      }
+      .scroll {
+        padding: 0px 100px;
+      }
+      .myUnits {
+        .unit {
+          padding: 200px 100px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1384px) {
+  .units {
+    .faUnits {
+      .myUnits {
+        .unit {
+          flex-direction: column;
+          padding: 50px 100px;
+          overflow: hidden;
+          & > div {
+            width: 100%;
+          }
+          h2 {
+            display: flex;
+            max-width: 100%;
+            div {
+              margin-left: 10px;
+              max-width: 100%;
+            }
+          }
+          p {
+            max-width: 100%;
+          }
+          img {
+            max-height: 50vh;
+          }
+        }
+      }
+    }
+    .enUnits {
+      .myUnits {
+        .unit {
+          flex-direction: column;
+          padding: 50px 100px;
+          overflow: hidden;
+          h2 {
+            display: flex;
+            max-width: 100%;
+            div {
+              margin-left: 10px;
+              max-width: 100%;
+            }
+          }
+          p {
+            max-width: 100%;
+          }
+          img {
+            max-height: 50vh;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .units {
+    .faUnits {
+      .topDiv {
+        padding: 170px 50px 0px 50px;
+        margin-bottom: 100px;
+        h3 {
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 20px;
+          line-height: 35px;
+          margin: 0px;
+        }
+        p {
+          max-width: 100%;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      .scroll {
+        padding: 0px 50px;
+        .scrollIcon {
+          height: 40px;
+          width: 20px;
+          padding: 0px 6px;
+        }
+        .scrollTitle {
+          font-size: 12px;
+        }
+      }
+      .lineDiv {
+        margin-bottom: 100px;
+        &::before {
+          display: none;
+        }
+      }
+      .myUnits {
+        .unit {
+          padding: 50px;
+          justify-content: center !important;
+          h2 {
+            font-size: 20px;
+            line-height: 35px;
+            margin-bottom: 0px;
+            div {
+              margin-left: 0px;
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          a {
+            font-size: 12px;
+          }
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+    .enUnits {
+      .topDiv {
+        padding: 170px 50px 0px 50px;
+        margin-bottom: 100px;
+        h3 {
+          font-size: 20px;
+          line-height: 35px;
+        }
+        h1 {
+          font-size: 20px;
+          line-height: 35px;
+          margin: 0px;
+        }
+        p {
+          max-width: 100%;
+          line-height: 20px;
+          font-size: 14px;
+        }
+      }
+      .scroll {
+        padding: 0px 50px;
+      }
+      .lineDiv {
+        margin-bottom: 200px;
+        height: 300px;
+        overflow: hidden;
+        &::before {
+          display: none;
+        }
+      }
+      .myUnits {
+        .unit {
+          padding: 50px;
+          justify-content: center !important;
+          h2 {
+            font-size: 20px;
+            line-height: 35px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          a {
+            font-size: 12px;
+          }
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

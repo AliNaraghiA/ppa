@@ -1,0 +1,13 @@
+query gallery1($slug: ID!) {
+  gallery(id: $slug idType:SLUG) {
+    slug
+    acfgallery {
+      title
+      englishtitle
+      gallery{
+        altText
+        sourceUrl
+      }
+    }
+  }
+}

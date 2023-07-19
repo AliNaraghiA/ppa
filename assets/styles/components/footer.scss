@@ -1,0 +1,321 @@
+.footer {
+  * {
+    position: relative;
+  }
+  .enFooter {
+    .topFooter {
+      padding: 0px 260px;
+      &::before {
+        content: "";
+        width: 600px;
+        height: 600px;
+        display: inline-block;
+        position: absolute;
+        right: 800px;
+        bottom: 0px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.71);
+        filter: blur(200px);
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 80px;
+        color: #ffffff;
+        margin-bottom: 40px;
+        span {
+          color: #0094ff;
+        }
+      }
+      .email {
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        background-color: inherit;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 24px;
+        transform: skew(-30deg);
+        margin-right: 20px;
+        img,
+        a {
+          transform: skew(30deg);
+        }
+        img {
+          margin-right: 8px;
+        }
+        a {
+          color: white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .line {
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .logo {
+        width: 113px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+      }
+      .addressAndLinks {
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          text-align: justify;
+          color: #dddddd;
+          max-width: 450px;
+          span {
+            font-weight: 700;
+          }
+        }
+        a {
+          margin-bottom: 20px;
+          font-weight: 500;
+          font-size: 20px;
+          color: #dddddd;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .whiteCircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin-right: 15px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+    }
+    .botFooter {
+      padding: 0px 90px 46px 90px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 18px;
+      color: #b6b7bb;
+      div {
+        padding-top: 34px;
+        border-top: 3px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .faFooter {
+    .topFooter {
+      padding: 0px 260px;
+      &::before {
+        content: "";
+        width: 600px;
+        height: 600px;
+        display: inline-block;
+        position: absolute;
+        right: 800px;
+        bottom: 0px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.71);
+        filter: blur(200px);
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 80px;
+        color: #ffffff;
+        margin-bottom: 40px;
+        text-align: left;
+        span {
+          color: #0094ff;
+        }
+      }
+      .email {
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        background-color: inherit;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 24px;
+        transform: skew(-30deg);
+        margin-right: 20px;
+        img,
+        a {
+          transform: skew(30deg);
+        }
+        img {
+          margin-right: 8px;
+        }
+        a {
+          color: white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .line {
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .logo {
+        width: 113px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+      }
+      .addressAndLinks {
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          text-align: justify;
+          color: #dddddd;
+          max-width: 450px;
+        }
+        a {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #dddddd;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .whiteCircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin-right: 15px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+    }
+    .botFooter {
+      padding: 0px 90px 46px 90px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 18px;
+      color: #b6b7bb;
+
+      div {
+        text-align: left;
+        padding-top: 34px;
+        border-top: 3px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1679px) {
+  .footer {
+    .enFooter {
+      .topFooter {
+        padding: 0px 100px;
+      }
+    }
+    .faFooter {
+      .topFooter {
+        padding: 0px 100px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1384px) {
+  .footer {
+    .enFooter {
+      .topFooter {
+        .addressAndLinks {
+          flex-direction: column;
+          .links {
+            margin-right: 0px !important;
+            padding: 0px !important;
+          }
+        }
+      }
+    }
+    .faFooter {
+      .topFooter {
+        .addressAndLinks {
+          flex-direction: column;
+          .links {
+            margin-right: 0px !important;
+            padding: 0px !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer {
+    .enFooter {
+      h2 {
+        font-size: 20px !important;
+      }
+      a,
+      p,
+      div {
+        font-size: 10px !important;
+      }
+      .topFooter {
+        padding: 0px 50px;
+        .email {
+          align-items: center;
+          padding: 15px;
+          img {
+            width: 20px;
+          }
+        }
+        .logo {
+          width: 70px;
+        }
+        .whiteCircle {
+          width: 35px;
+          height: 35px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+      .botFooter {
+        padding: 50px;
+      }
+    }
+    .faFooter {
+      h2 {
+        font-size: 20px !important;
+      }
+      a,
+      p,
+      div {
+        font-size: 10px !important;
+      }
+      .topFooter {
+        padding: 0px 50px;
+        .email {
+          align-items: center;
+          padding: 15px;
+          img {
+            width: 20px;
+          }
+        }
+        .logo {
+          width: 70px;
+        }
+        .whiteCircle {
+          width: 35px;
+          height: 35px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+      .botFooter {
+        padding: 50px;
+      }
+    }
+  }
+}

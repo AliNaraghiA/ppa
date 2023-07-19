@@ -1,0 +1,36 @@
+.circles,
+.circles2 {
+  width: 100%;
+  z-index: 99999;
+  position: relative;
+  .circle,
+  .circle2 {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    transition: background-color 0.5s;
+    transition: width 0.5s;
+    transition: translateX 0.5s;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .grayCircle,
+  .grayCircle2 {
+    background-color: rgba(217, 217, 217, 0.4);
+  }
+  .whitCircle,
+  .whitCircle2 {
+    background-color: white;
+  }
+}
+.lines {
+  display: none;
+  width: 100%;
+  z-index: 99999;
+  height: 605.78px !important;
+  overflow: hidden;
+  .line {
+    background: white;
+    position: absolute;
+  }
+}

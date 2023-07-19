@@ -1,0 +1,250 @@
+.construction {
+  background: #0c0f1c;
+  .faConstruction {
+    overflow: hidden;
+    * {
+      z-index: 8;
+      position: relative;
+      direction: rtl;
+      text-align: right;
+    }
+    .topDiv {
+      padding: 0px 260px;
+      margin-bottom: 180px;
+      position: relative;
+      padding-top: 250px;
+
+      &::before {
+        content: "";
+        width: 864px;
+        height: 864px;
+        display: inline-block;
+        position: absolute;
+        right: -200px;
+        bottom: -300px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+      }
+      h1 {
+        max-width: 750px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 98px;
+        color: #ffffff;
+        margin-top: 37px;
+        margin-bottom: 47px;
+      }
+      p {
+        max-width: 664px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+      }
+    }
+    .scroll {
+      padding: 0px 260px;
+      margin-bottom: 50px;
+      .scrollTitle {
+        font-weight: 400;
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .scrollIcon {
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        height: 50px;
+        width: 28px;
+        margin-left: 12px;
+        padding: 0px 10px;
+        .scrollCircle {
+          display: inline-block;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          background-color: white;
+        }
+      }
+    }
+    .lineDiv {
+      margin-bottom: 200px;
+      &::before {
+        content: "";
+        width: 675px;
+        height: 675px;
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        bottom: 250px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+    }
+    .categories {
+      margin: 0px 260px;
+      background: #1a1d29;
+      height: 102px;
+      div {
+        height: 100%;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 44px;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 5px solid #0094ff;
+      }
+    }
+    .items {
+      padding: 0px 260px;
+      .item {
+        border: 1px solid #3d3f49;
+        padding: 16px 20px;
+        width: 300px;
+        margin-top: 60px;
+        .whiteDiv {
+          padding: 0px 42px;
+          background-color: white;
+          margin-bottom: 17px;
+          img {
+            width: 100%;
+          }
+        }
+        .title {
+          width: fit-content;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 25px;
+          color: #ffffff;
+          border-bottom: 4px solid #0094ff;
+          margin-bottom: 10px;
+        }
+        .name {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          color: #ffffff;
+          margin-bottom: 14px;
+        }
+        .weight {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 30px;
+          color: #ffffff;
+          margin-bottom: 14px;
+          direction: ltr;
+        }
+      }
+    }
+    .footer {
+      margin-top: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 1679px) {
+  .construction {
+    .faConstruction {
+      .topDiv {
+        padding: 250px 100px 0px 100px;
+      }
+      .scroll,
+      .items {
+        padding: 0px 100px;
+      }
+      .categories {
+        margin: 0px 100px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1384px) {
+  .construction {
+    .faConstruction {
+      .lineDiv {
+        &::before {
+          display: none;
+        }
+      }
+      .categories {
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: space-around !important;
+        div {
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .construction {
+    .faConstruction {
+      .topDiv {
+        padding: 170px 50px 0px 50px;
+        margin-bottom: 100px;
+        h3 {
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 20px;
+          line-height: 35px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      .scroll {
+        .scrollIcon {
+          height: 40px;
+          width: 20px;
+          padding: 0px 6px;
+        }
+        .scrollTitle {
+          font-size: 12px;
+        }
+      }
+      .scroll,
+      .items {
+        padding: 0px 50px;
+      }
+      .categories {
+        margin: 0px 50px;
+        div {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      .items {
+        justify-content: center !important;
+        .item {
+          width: 250px;
+          .title,
+          .name,
+          .weight {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@use "./variables";
+.irancell {
+  font-family: irancell;
+}
+.mont {
+  font-family: montserrat;
+}
+.pointer {
+  cursor: pointer;
+}
+.effectBtn {
+  transform: skew(-20deg);
+  border: none;
+  border-radius: 5px;
+  padding: 11px 0px;
+  margin-left: 10px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  cursor: pointer;
+  img,
+  span {
+    display: inline-block;
+    transform: skew(20deg);
+  }
+  img {
+    width: 21px;
+    margin-right: 3px;
+  }
+  span {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: variables.$primary10;
+    transition: transform 1s;
+    transform: translateX(-100%);
+  }
+  &:hover {
+    &::before {
+      transform: translateX(0%);
+    }
+  }
+}
+@keyframes animation {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+.scrollIcon {
+  .scrollCircle {
+    transition: all 0.5;
+    animation: animation 1.5s infinite;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .effectBtn {
+    padding: 8px 0px;
+    margin-left: 10px;
+    width: 100px;
+    span {
+      font-size: 12px !important;
+    }
+    img {
+      width: 14px;
+    }
+  }
+}

@@ -1,0 +1,762 @@
+.aboutUs {
+  background: #0c0f1c;
+  .enAboutUs {
+    overflow: hidden;
+    * {
+      z-index: 8;
+      position: relative;
+    }
+    .topDiv {
+      padding: 0px 260px;
+      margin-bottom: 400px;
+      padding-top: 250px;
+      .title {
+        margin-right: 20px;
+        max-width: 50%;
+        .myLines {
+          overflow: hidden;
+          width: 100%;
+        }
+      }
+      .text {
+        min-width: 615px;
+      }
+      &::before {
+        content: "";
+        width: 864px;
+        height: 864px;
+        display: inline-block;
+        position: absolute;
+        left: -500px;
+        bottom: -400px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+      h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 37px;
+      }
+      h1 {
+        max-width: 475px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 98px;
+        color: #ffffff;
+        margin-bottom: 100px;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.49);
+        margin-bottom: 37px;
+      }
+      p {
+        max-width: 615px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #dddddd;
+      }
+    }
+    .capabilities,
+    .activities {
+      padding: 0px 260px;
+      margin-bottom: 412px;
+      div {
+        max-width: 675px;
+        padding-bottom: 32px;
+        border-bottom: 2px solid #0096ff;
+        h2 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 80px;
+          color: #ffffff;
+          margin-bottom: 25px;
+        }
+        ul {
+          padding-left: 20px;
+          li {
+            margin-bottom: 18px;
+            color: #0096ff;
+            span {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+
+              color: #dddddd;
+              max-width: 615px;
+            }
+          }
+        }
+      }
+      img {
+        width: 645px;
+      }
+    }
+    .capabilities {
+      img {
+        margin-left: 50px;
+      }
+    }
+    .activities {
+      img {
+        margin-right: 50px;
+      }
+      &::before {
+        content: "";
+        width: 744px;
+        height: 744px;
+        display: inline-block;
+        position: absolute;
+        left: 600px;
+        bottom: 300px;
+        z-index: -1;
+        background: #3b4d8d;
+        opacity: 0.7;
+        filter: blur(150px);
+      }
+    }
+    .visions {
+      padding: 0px 260px;
+      margin-bottom: 300px;
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        color: #ffffff;
+        margin-bottom: 25px;
+      }
+      & > p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+
+        color: #ffffff;
+        margin-bottom: 47px;
+      }
+      .items {
+        margin-top: 100px;
+        .item {
+          max-width: 600px;
+          padding-left: 75px;
+          margin-bottom: 150px;
+          height: fit-content;
+          border-left: 3px solid #0094ff;
+          img {
+            height: 90px;
+            margin-bottom: 34px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+
+            color: #ffffff;
+            margin-bottom: 15px;
+            max-width: 320px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #ffffff;
+          }
+        }
+        .item2 {
+          margin-top: 150px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .faAboutUs {
+    overflow: hidden;
+
+    * {
+      z-index: 8;
+      position: relative;
+      direction: rtl;
+      text-align: right;
+    }
+    .topDiv {
+      padding: 0px 260px;
+      margin-bottom: 400px;
+      padding-top: 250px;
+      .title {
+        margin-left: 20px;
+        max-width: 50%;
+        .myLines {
+          overflow: hidden;
+          width: 100%;
+        }
+      }
+      .text {
+        min-width: 615px;
+      }
+      &::before {
+        content: "";
+        width: 864px;
+        height: 864px;
+        display: inline-block;
+        position: absolute;
+        right: -300px;
+        bottom: -400px;
+        z-index: -1;
+        background: rgba(0, 129, 255, 0.63);
+        filter: blur(200px);
+      }
+      h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 37px;
+      }
+      h1 {
+        max-width: 475px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 98px;
+        color: #ffffff;
+        margin-bottom: 100px;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.49);
+        margin-bottom: 37px;
+      }
+      p {
+        max-width: 615px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+
+        color: #dddddd;
+      }
+    }
+    .capabilities,
+    .activities {
+      padding: 0px 260px;
+      margin-bottom: 412px;
+      div {
+        max-width: 675px;
+        padding-bottom: 32px;
+        border-bottom: 2px solid #0096ff;
+        h2 {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 38px;
+          color: #ffffff;
+          margin-bottom: 25px;
+        }
+        ul {
+          padding-left: 20px;
+          li {
+            margin-bottom: 18px;
+            color: #0096ff;
+            span {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+
+              color: #dddddd;
+              max-width: 615px;
+            }
+          }
+        }
+      }
+      img {
+        width: 645px;
+      }
+    }
+    .activities {
+      img {
+        margin-left: 40px;
+      }
+      &::before {
+        content: "";
+        width: 744px;
+        height: 744px;
+        display: inline-block;
+        position: absolute;
+        left: 600px;
+        bottom: 300px;
+        z-index: -1;
+        background: #3b4d8d;
+        opacity: 0.7;
+        filter: blur(150px);
+      }
+    }
+    .capabilities {
+      img {
+        margin-right: 20px;
+      }
+    }
+    .visions {
+      padding: 0px 260px;
+      margin-bottom: 300px;
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        color: #ffffff;
+        margin-bottom: 25px;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 38px;
+        color: #ffffff;
+        .blueLine {
+          height: 8px;
+          width: 90px;
+          margin-right: 20px;
+          background-color: #027cd8;
+          display: inline-block;
+        }
+      }
+      & > p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-bottom: 47px;
+      }
+      .items {
+        margin-top: 100px;
+        .item {
+          max-width: 475px;
+          padding-right: 75px;
+          margin-bottom: 150px;
+          height: fit-content;
+          border-right: 3px solid #0094ff;
+          img {
+            height: 90px;
+            margin-bottom: 34px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            max-width: 320px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #ffffff;
+          }
+        }
+        .item2 {
+          margin-top: 150px;
+        }
+      }
+    }
+    .certificates {
+      margin-bottom: 200px;
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        color: #ffffff;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 80px;
+        color: #ffffff;
+        .blueLine {
+          height: 8px;
+          width: 90px;
+          margin-right: 20px;
+          background-color: #027cd8;
+          display: inline-block;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+        margin-top: 60px;
+        margin-bottom: 94px;
+      }
+      .padd {
+        padding: 0px 260px;
+      }
+      .splide {
+        padding: 0px 260px;
+        .splide__arrows {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          top: 50%;
+          width: 100vw;
+          position: absolute;
+          right: 0px;
+          padding: 0px 200px;
+          .buttom {
+            background-color: inherit;
+          }
+        }
+        .splide__track {
+          ul {
+            li {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      .images {
+        padding: 0px 230px;
+        margin-bottom: 400px;
+        max-width: 100%;
+        & > img {
+          width: 24px;
+          cursor: pointer;
+        }
+        .image {
+          width: 23%;
+        }
+      }
+
+      .carouselImage {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1679px) {
+  .aboutUs {
+    .enAboutUs {
+      .topDiv {
+        padding: 250px 100px 0px 100px;
+      }
+      .capabilities,
+      .activities,
+      .visions {
+        padding: 0px 100px;
+      }
+    }
+    .faAboutUs {
+      .topDiv {
+        padding: 250px 100px 0px 100px;
+      }
+      .capabilities,
+      .activities,
+      .visions {
+        padding: 0px 100px;
+      }
+      .certificates {
+        .padd,
+        .images {
+          padding: 0px 100px;
+        }
+        .splide {
+          padding: 0px 100px;
+          .splide__arrows {
+            padding: 0px 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1384px) {
+  .aboutUs {
+    .enAboutUs {
+      .topDiv {
+        flex-direction: column;
+        .title {
+          margin-bottom: 50px;
+          max-width: 100%;
+
+          .myLines {
+            width: 100%;
+          }
+        }
+        .text {
+          min-width: 100%;
+          p {
+            min-width: 100%;
+          }
+        }
+      }
+      .capabilities,
+      .activities {
+        flex-direction: column;
+        & > div {
+          margin-bottom: 50px;
+          max-width: 100%;
+          width: 100%;
+        }
+        img {
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      .activities {
+        flex-direction: column-reverse;
+      }
+      .visions {
+        .items {
+          & > div {
+            flex-wrap: wrap;
+          }
+          .item {
+            width: 100%;
+            margin-top: 70px;
+          }
+          .item2 {
+            margin-top: 0px;
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    .faAboutUs {
+      .topDiv {
+        flex-direction: column;
+        .title {
+          margin-bottom: 50px;
+          max-width: 100%;
+
+          .myLines {
+            width: 100%;
+          }
+        }
+        .text {
+          min-width: 100%;
+          p {
+            min-width: 100%;
+          }
+        }
+      }
+      .capabilities,
+      .activities {
+        flex-direction: column;
+        & > div {
+          margin-bottom: 50px;
+          max-width: 100%;
+          width: 100%;
+        }
+        img {
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      .activities {
+        flex-direction: column-reverse;
+      }
+      .visions {
+        .visionHeader {
+          flex-direction: column;
+          h4,
+          h2 {
+            width: 100%;
+          }
+          h2 {
+            text-align: left;
+          }
+        }
+        .items {
+          & > div {
+            flex-wrap: wrap;
+          }
+          .item {
+            width: 100%;
+            margin-top: 70px;
+          }
+          .item2 {
+            margin-top: 0px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .certificateHeader {
+        flex-direction: column;
+        h3 {
+          width: 100%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .aboutUs {
+    .enAboutUs {
+      .topDiv {
+        padding: 170px 50px 0px 50px;
+        margin-bottom: 200px;
+        .title {
+          h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 20px;
+            margin-bottom: 50px;
+          }
+        }
+        .text {
+          h4 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      .capabilities,
+      .activities,
+      .visions {
+        padding: 0px 50px;
+        margin-bottom: 200px;
+        h2 {
+          font-size: 20px !important;
+        }
+        span,
+        p {
+          font-size: 10px !important;
+          line-height: 20px !important;
+        }
+      }
+      .visions {
+        .items {
+          .item {
+            margin: 50px 0px;
+            padding-left: 20px;
+            img {
+              height: 70px;
+            }
+            h3 {
+              font-size: 20px;
+              min-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .faAboutUs {
+      .topDiv {
+        padding: 170px 50px 0px 50px;
+        margin-bottom: 200px;
+        .title {
+          h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 20px;
+            margin-bottom: 50px;
+          }
+        }
+        .text {
+          h4 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      .capabilities,
+      .activities,
+      .visions {
+        padding: 0px 50px;
+        margin-bottom: 200px;
+        h2 {
+          font-size: 20px !important;
+        }
+        span,
+        p {
+          font-size: 10px !important;
+          line-height: 20px;
+        }
+      }
+      .visions {
+        .visionHeader {
+          h4 {
+            font-size: 20px;
+            .blueLine {
+              width: 50px;
+              height: 5px;
+            }
+          }
+        }
+        .items {
+          margin-bottom: 50px;
+          .item {
+            padding-right: 20px;
+            margin-bottom: 50px;
+            margin-top: 0px;
+            img {
+              height: 70px;
+            }
+            h3 {
+              font-size: 20px;
+              line-height: 35px;
+              min-width: 100%;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .certificates {
+        margin-bottom: 100px;
+        h2,
+        h3 {
+          font-size: 20px;
+          .blueLine {
+            width: 50px;
+            height: 5px;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .padd,
+        .images {
+          padding: 0px 50px;
+        }
+        .splide {
+          padding: 0px 60px;
+          .splide__arrows {
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}
