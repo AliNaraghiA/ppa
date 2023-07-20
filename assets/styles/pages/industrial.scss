@@ -1,253 +1,397 @@
 .industrial {
-  background: #0c0f1c;
-  .faIndustrial {
-    overflow: hidden;
-    * {
-      z-index: 8;
-      position: relative;
-      direction: rtl;
-      text-align: right;
-    }
-    .topDiv {
-      padding: 0px 260px;
-      margin-bottom: 180px;
-      position: relative;
-      padding-top: 250px;
-      &::before {
-        content: "";
-        width: 864px;
-        height: 864px;
-        display: inline-block;
-        position: absolute;
-        right: -200px;
-        bottom: -300px;
-        z-index: -1;
-        background: rgba(0, 129, 255, 0.63);
-        filter: blur(200px);
-      }
-      h3 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        color: #ffffff;
-      }
-      h1 {
-        max-width: 750px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 38px;
-        line-height: 98px;
-        color: #ffffff;
-        margin-top: 37px;
-        margin-bottom: 47px;
-      }
-      p {
-        max-width: 664px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
+    background: #0c0f1c;
+    .faIndustrial {
+        overflow: hidden;
+        * {
+            z-index: 8;
+            position: relative;
+            direction: rtl;
+            text-align: right;
+        }
+        .topDiv {
+            padding: 0px 260px;
+            margin-bottom: 180px;
+            position: relative;
+            padding-top: 250px;
+            &::before {
+                content: "";
+                width: 864px;
+                height: 864px;
+                display: inline-block;
+                position: absolute;
+                right: -200px;
+                bottom: -300px;
+                z-index: -1;
+                background: rgba(0, 129, 255, 0.63);
+                filter: blur(200px);
+            }
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                color: #ffffff;
+            }
+            h1 {
+                max-width: 750px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 38px;
+                line-height: 98px;
+                color: #ffffff;
+                margin-top: 37px;
+                margin-bottom: 47px;
+            }
+            p {
+                max-width: 664px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
 
-        color: #ffffff;
-      }
-    }
-    .scroll {
-      padding: 0px 260px;
-      margin-bottom: 50px;
-      .scrollTitle {
-        font-weight: 400;
-        font-size: 15px;
-        color: #ffffff;
-      }
-      .scrollIcon {
-        border-radius: 30px;
-        border: 1px solid #ffffff;
-        height: 50px;
-        width: 28px;
-        margin-left: 12px;
-        padding: 0px 10px;
-        .scrollCircle {
-          display: inline-block;
-          border-radius: 50%;
-          width: 6px;
-          height: 6px;
-          background-color: white;
+                color: #ffffff;
+            }
         }
-      }
-    }
-    .lineDiv {
-      margin-bottom: 200px;
-      &::before {
-        content: "";
-        width: 675px;
-        height: 675px;
-        display: inline-block;
-        position: absolute;
-        left: 100px;
-        bottom: 250px;
-        z-index: -1;
-        background: rgba(0, 129, 255, 0.63);
-        filter: blur(200px);
-      }
-    }
-    section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      background: #0c0f1c;
-    }
-    .item1,
-    .item2 {
-      margin-top: 140px;
-      height: 100%;
-      width: 100%;
-      .titleAndText {
-        padding-right: 25px;
-        border-right: 4px solid #0094ff;
-        margin-bottom: 50px;
-        .title {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 38px;
-          color: #ffffff;
-          margin-bottom: 50px;
+        .scroll {
+            padding: 0px 260px;
+            margin-bottom: 50px;
+            .scrollTitle {
+                font-weight: 400;
+                font-size: 15px;
+                color: #ffffff;
+            }
+            .scrollIcon {
+                border-radius: 30px;
+                border: 1px solid #ffffff;
+                height: 50px;
+                width: 28px;
+                margin-left: 12px;
+                padding: 0px 10px;
+                .scrollCircle {
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: white;
+                }
+            }
         }
-        .text {
-          max-width: 725px;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 30px;
-          color: #ffffff;
+        .lineDiv {
+            margin-bottom: 200px;
+            &::before {
+                content: "";
+                width: 675px;
+                height: 675px;
+                display: inline-block;
+                position: absolute;
+                left: 100px;
+                bottom: 250px;
+                z-index: -1;
+                background: rgba(0, 129, 255, 0.63);
+                filter: blur(200px);
+            }
         }
-      }
-      a {
-        margin-right: 10px;
-        &:hover {
-          text-decoration: none;
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #0c0f1c;
         }
-        span {
-          color: black;
+        .item1,
+        .item2 {
+            margin-top: 140px;
+            height: 100%;
+            width: 100%;
+            .titleAndText {
+                padding-right: 25px;
+                border-right: 4px solid #0094ff;
+                margin-bottom: 50px;
+                .title {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 38px;
+                    color: #ffffff;
+                    margin-bottom: 50px;
+                }
+                .text {
+                    max-width: 725px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #ffffff;
+                }
+            }
+            a {
+                margin-right: 10px;
+                &:hover {
+                    text-decoration: none;
+                }
+                span {
+                    color: black;
+                }
+            }
+            img {
+                width: 600px;
+            }
         }
-      }
-      img {
-        width: 600px;
-      }
+        .item1 {
+            padding-right: 260px;
+            padding-left: 150px;
+        }
+        .item2 {
+            padding-left: 260px;
+            padding-right: 150px;
+        }
+        .footer {
+            margin-top: 300px;
+        }
     }
-    .item1 {
-      padding-right: 260px;
-      padding-left: 150px;
+    .enIndustrial {
+        overflow: hidden;
+        * {
+            z-index: 8;
+            position: relative;
+        }
+        .topDiv {
+            padding: 0px 260px;
+            margin-bottom: 180px;
+            position: relative;
+            padding-top: 250px;
+            &::before {
+                content: "";
+                width: 864px;
+                height: 864px;
+                display: inline-block;
+                position: absolute;
+                right: -200px;
+                bottom: -300px;
+                z-index: -1;
+                background: rgba(0, 129, 255, 0.63);
+                filter: blur(200px);
+            }
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                color: #ffffff;
+            }
+            h1 {
+                max-width: 750px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 38px;
+                line-height: 98px;
+                color: #ffffff;
+                margin-top: 37px;
+                margin-bottom: 47px;
+            }
+            p {
+                max-width: 664px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+
+                color: #ffffff;
+            }
+        }
+        .scroll {
+            padding: 0px 260px;
+            margin-bottom: 50px;
+            .scrollTitle {
+                font-weight: 400;
+                font-size: 15px;
+                color: #ffffff;
+            }
+            .scrollIcon {
+                border-radius: 30px;
+                border: 1px solid #ffffff;
+                height: 50px;
+                width: 28px;
+                margin-left: 12px;
+                padding: 0px 10px;
+                .scrollCircle {
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: white;
+                }
+            }
+        }
+        .lineDiv {
+            margin-bottom: 200px;
+            &::before {
+                content: "";
+                width: 675px;
+                height: 675px;
+                display: inline-block;
+                position: absolute;
+                left: 100px;
+                bottom: 250px;
+                z-index: -1;
+                background: rgba(0, 129, 255, 0.63);
+                filter: blur(200px);
+            }
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #0c0f1c;
+        }
+        .item1,
+        .item2 {
+            margin-top: 140px;
+            height: 100%;
+            width: 100%;
+            .titleAndText {
+                padding-right: 25px;
+                border-right: 4px solid #0094ff;
+                margin-bottom: 50px;
+                .title {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 38px;
+                    color: #ffffff;
+                    margin-bottom: 50px;
+                }
+                .text {
+                    max-width: 725px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #ffffff;
+                }
+            }
+            a {
+                margin-right: 10px;
+                &:hover {
+                    text-decoration: none;
+                }
+                span {
+                    color: black;
+                }
+            }
+            img {
+                width: 600px;
+            }
+        }
+        .item1 {
+            padding-right: 260px;
+            padding-left: 150px;
+        }
+        .item2 {
+            padding-left: 260px;
+            padding-right: 150px;
+        }
+        .footer {
+            margin-top: 300px;
+        }
     }
-    .item2 {
-      padding-left: 260px;
-      padding-right: 150px;
-    }
-    .footer {
-      margin-top: 300px;
-    }
-  }
 }
 @media only screen and (max-width: 1679px) {
-  .industrial {
-    .faIndustrial {
-      .topDiv {
-        padding: 250px 100px 0px 100px;
-      }
-      .scroll,
-      .item1,
-      .item2 {
-        padding: 0px 100px;
-      }
+    .industrial {
+        .faIndustrial {
+            .topDiv {
+                padding: 250px 100px 0px 100px;
+            }
+            .scroll,
+            .item1,
+            .item2 {
+                padding: 0px 100px;
+            }
+        }
     }
-  }
 }
 @media only screen and (max-width: 1384px) {
-  .industrial {
-    .faIndustrial {
-      .lineDiv {
-        &::before {
-          display: none;
-        }
-      }
-      .item1 {
-        flex-direction: column;
-        justify-content: center !important;
-        & > div {
-          width: 100%;
-          .titleAndText {
-            .text {
-              max-width: 100%;
+    .industrial {
+        .faIndustrial {
+            .lineDiv {
+                &::before {
+                    display: none;
+                }
             }
-          }
-        }
-        img {
-          width: 300px;
-        }
-      }
-      .item2 {
-        flex-direction: column-reverse;
-        justify-content: center !important;
-        & > div {
-          width: 100%;
-          .titleAndText {
-            .text {
-              max-width: 100%;
+            .item1 {
+                flex-direction: column;
+                justify-content: center !important;
+                & > div {
+                    width: 100%;
+                    .titleAndText {
+                        .text {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                img {
+                    width: 300px;
+                }
             }
-          }
+            .item2 {
+                flex-direction: column-reverse;
+                justify-content: center !important;
+                & > div {
+                    width: 100%;
+                    .titleAndText {
+                        .text {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                img {
+                    width: 300px;
+                }
+            }
         }
-        img {
-          width: 300px;
-        }
-      }
     }
-  }
 }
 @media only screen and (max-width: 750px) {
-  .industrial {
-    .faIndustrial {
-      .topDiv {
-        padding: 170px 50px 0px 50px;
-        margin-bottom: 100px;
-        h3 {
-          font-size: 20px;
+    .industrial {
+        .faIndustrial {
+            .topDiv {
+                padding: 170px 50px 0px 50px;
+                margin-bottom: 100px;
+                h3 {
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .scroll {
+                .scrollIcon {
+                    height: 40px;
+                    width: 20px;
+                    padding: 0px 6px;
+                }
+                .scrollTitle {
+                    font-size: 12px;
+                }
+            }
+            .scroll,
+            .item1,
+            .item2 {
+                padding: 0px 50px;
+                .titleAndText {
+                    .title {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .text {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .footer {
+                margin-top: 150px;
+            }
         }
-        h1 {
-          font-size: 20px;
-          line-height: 35px;
-        }
-        p {
-          font-size: 14px;
-          line-height: 20px;
-        }
-      }
-      .scroll {
-        .scrollIcon {
-          height: 40px;
-          width: 20px;
-          padding: 0px 6px;
-        }
-        .scrollTitle {
-          font-size: 12px;
-        }
-      }
-      .scroll,
-      .item1,
-      .item2 {
-        padding: 0px 50px;
-        .titleAndText {
-          .title {
-            font-size: 20px;
-            margin-bottom: 20px;
-          }
-          .text {
-            font-size: 14px;
-            line-height: 20px;
-          }
-        }
-      }
-      .footer {
-        margin-top: 150px;
-      }
     }
-  }
 }
