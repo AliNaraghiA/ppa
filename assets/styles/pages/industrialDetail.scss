@@ -327,6 +327,22 @@
                 }
             }
         }
+        .enIndustrialDetail {
+            .topDiv {
+                padding: 250px 100px 0px 100px;
+            }
+            .imgAndText,
+            .diameter,
+            .images {
+                padding: 0px 100px;
+            }
+            .splide {
+                padding: 0px 100px;
+                .splide__arrows {
+                    padding: 0px 50px;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 1384px) {
@@ -344,11 +360,99 @@
                 }
             }
         }
+        .enIndustrialDetail {
+            .lineDiv {
+                &::before {
+                    display: none;
+                }
+            }
+            .imgAndText {
+                flex-direction: column-reverse;
+                .text {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 750px) {
     .industrialDetail {
         .faIndustrialDetail {
+            .topDiv {
+                padding: 170px 50px 0px 50px;
+                margin-bottom: 100px;
+                h3 {
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .imgAndText,
+            .diameter,
+            .images {
+                padding: 0px 50px;
+            }
+            .imgAndText {
+                img {
+                    width: 100%;
+                }
+                .text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .diameter {
+                .title {
+                    font-size: 15px;
+                }
+                .allItems {
+                    .items {
+                        .item1,
+                        .item2 {
+                            span {
+                                font-size: 12px;
+                            }
+                            img {
+                                width: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .images {
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+            .splide {
+                padding: 0px 60px;
+                .splide__arrows {
+                    padding: 0px;
+                }
+                .splide__track {
+                    ul {
+                        li {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer {
+                margin-top: 150px;
+            }
+        }
+        .enIndustrialDetail {
             .topDiv {
                 padding: 170px 50px 0px 50px;
                 margin-bottom: 100px;

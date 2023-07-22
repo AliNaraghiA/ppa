@@ -373,6 +373,18 @@
                 margin: 0px 100px;
             }
         }
+        .enExclusive {
+            .topDiv {
+                padding: 250px 100px 0px 100px;
+            }
+            .scroll,
+            .formText {
+                padding: 0px 100px;
+            }
+            form {
+                margin: 0px 100px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 1384px) {
@@ -390,11 +402,85 @@
                 padding: 50px;
             }
         }
+        .enExclusive {
+            .lineDiv {
+                &::before {
+                    display: none;
+                }
+            }
+            .formText {
+                margin-top: 200px;
+            }
+            form {
+                padding: 50px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 750px) {
     .exclusive {
         .faExclusive {
+            .topDiv {
+                padding: 170px 50px 0px 50px;
+                margin-bottom: 100px;
+                h3 {
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .scroll {
+                .scrollIcon {
+                    height: 40px;
+                    width: 20px;
+                    padding: 0px 6px;
+                }
+                .scrollTitle {
+                    font-size: 12px;
+                }
+            }
+            .scroll,
+            .formText {
+                padding: 0px 50px;
+            }
+            form {
+                margin: 0px 50px;
+                padding: 20px;
+                input {
+                    width: 100%;
+                    font-size: 12px;
+                    padding-bottom: 40px;
+                    margin-bottom: 40px;
+                }
+                textarea {
+                    font-size: 12px;
+                }
+                .el-upload {
+                    .el-upload-dragger {
+                        .el-upload__text {
+                            font-size: 14px;
+                            img {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+                .size {
+                    font-size: 14px;
+                }
+            }
+            .formText {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .enExclusive {
             .topDiv {
                 padding: 170px 50px 0px 50px;
                 margin-bottom: 100px;

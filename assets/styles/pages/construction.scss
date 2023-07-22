@@ -331,6 +331,18 @@
                 margin: 0px 100px;
             }
         }
+        .enConstruction {
+            .topDiv {
+                padding: 250px 100px 0px 100px;
+            }
+            .scroll,
+            .items {
+                padding: 0px 100px;
+            }
+            .categories {
+                margin: 0px 100px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 1384px) {
@@ -350,11 +362,75 @@
                 }
             }
         }
+        .enConstruction {
+            .lineDiv {
+                &::before {
+                    display: none;
+                }
+            }
+            .categories {
+                flex-wrap: wrap;
+                height: fit-content;
+                justify-content: space-around !important;
+                div {
+                    height: 100px;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 750px) {
     .construction {
         .faConstruction {
+            .topDiv {
+                padding: 170px 50px 0px 50px;
+                margin-bottom: 100px;
+                h3 {
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .scroll {
+                .scrollIcon {
+                    height: 40px;
+                    width: 20px;
+                    padding: 0px 6px;
+                }
+                .scrollTitle {
+                    font-size: 12px;
+                }
+            }
+            .scroll,
+            .items {
+                padding: 0px 50px;
+            }
+            .categories {
+                margin: 0px 50px;
+                div {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .items {
+                justify-content: center !important;
+                .item {
+                    width: 250px;
+                    .title,
+                    .name,
+                    .weight {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .enConstruction {
             .topDiv {
                 padding: 170px 50px 0px 50px;
                 margin-bottom: 100px;
