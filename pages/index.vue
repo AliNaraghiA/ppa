@@ -210,7 +210,7 @@
                   </nuxt-link>
                 <p class="text" v-html="post.node.excerpt"></p>
               </div>
-              <div class="number mont">{{ post.node.databaseId }}</div>
+              <div class="number mont"></div>
             </div>
           </div>
         </div> 

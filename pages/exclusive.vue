@@ -35,7 +35,8 @@
           <input type="email" name="email" v-model="email"  placeholder="ایمیل" />
           <textarea name="message" v-model="message" rows="4" placeholder="توضیحات"></textarea>
         </div>
-        <el-upload
+        
+<!--         <el-upload
          ref="attachment"
          @change="handleAttachment"
           class="upload-demo"
@@ -59,7 +60,14 @@
         </div>
         <button class="effectBtn" type="submit">
           <span>ارسال</span>
-        </button>
+        </button> -->
+                  <!--  -->
+                  <input type="file" ref="attachment" @change="handleAttachment" />
+                     <div class="size">Attachment cannot exceed <span> 5 MB </span></div> 
+          <!--  -->
+          <button type="submit" class="effectBtn">
+            <span> ارسال </span>
+          </button>
       </form>
       <div style='color: red; ,font-size:flex-direction: ;;' v-if="successMessage" class="success-message">{{ successMessage }}</div>
       <div class="footer">

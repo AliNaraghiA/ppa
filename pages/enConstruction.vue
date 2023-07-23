@@ -4,12 +4,10 @@
             <Header lang="eng" @change="change" />
             <div class="topDiv">
                 <h3 class="mont">Products</h3>
-                <h1>محصولات ساختمانی</h1>
+                <h1>Ingots & billets</h1>
                 <p>
-                    امروزه یکی از متنوع‌ترین و پرکاربردةرین قطعات آلومینیوم در
-                    صنعت ساختمان می‌باشد.این عنصر به علت مقاومت در برابر خوردگی
-                    و اکسید شدن، قابلیت فرم پذیری و همچنین خاصیت انتقال حرارتی
-                    خوب در ساختمان به صورت نما و درب و پنجره کاربرد بسیاری دارد.
+                    Today, one of the most diverse and commonly used aluminum parts in the construction industry is ingots and billets. Due to its resistance to corrosion and oxidation, aluminum is widely used for producing ingots and billets. 
+
                 </p>
             </div>
             <div class="lineDiv">
@@ -17,16 +15,15 @@
             </div>
             <div class="categories d-flex justify-content-between">
                 <div @click="category = 1" :class="{ active: category == 1 }">
-                    سیستم کشویی نرمال( سری ۶۰)
-                </div>
+                    Normal drawer system (Series 60)                </div>
                 <div @click="category = 2" :class="{ active: category == 2 }">
-                    سیستم لولایی نرمال( سری ۴۷)
+                    Normal roller system (Series 47)
                 </div>
                 <div @click="category = 3" :class="{ active: category == 3 }">
-                    سیستم توری پلیسه ای
+                    Mesh grille system
                 </div>
                 <div @click="category = 4" :class="{ active: category == 4 }">
-                    سایر
+                    Other
                 </div>
             </div>
             <div
@@ -66,32 +63,32 @@ export default {
         return {
             language: "",
             category: 1,
-            constructions: [],
+            englishconstructions: [],
         };
     },
     async asyncData({ app }) {
         const query = gql`
-            query Constructions {
-                constructions {
-                    nodes {
-                        desiredSlug
-                        databaseId
-                        slug
-                        acfconstructions {
-                            category
-                            repeater {
-                                image {
-                                    altText
-                                    sourceUrl
-                                }
-                                name
-                                weight
-                                title
-                            }
-                        }
-                    }
-                }
-            }
+query Constructions {
+    englishconstructions {
+    nodes {
+      desiredSlug
+      databaseId
+      slug
+      acfconstructions {
+        category
+        repeater {
+          image {
+            altText
+            sourceUrl
+          }
+          name
+          weight
+          title
+        }
+      }
+    }
+  }
+}
         `;
 
         const { data } = await app.apolloProvider.defaultClient.query({
@@ -99,14 +96,14 @@ export default {
         });
 
         return {
-            constructions: data.constructions.nodes,
+            englishconstructions: data.englishconstructions.nodes,
         };
     },
     computed: {
         filteredConstructions() {
-            return this.constructions.filter(
-                (construction) =>
-                    construction.acfconstructions.category == this.category
+            return this.englishconstructions.filter(
+                (englishconstructions) =>
+                englishconstructions.acfconstructions.category == this.category
             );
         },
     },

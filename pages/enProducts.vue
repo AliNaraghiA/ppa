@@ -22,7 +22,10 @@
               Exclusive Products is a one-stop solution provider for all your aluminum product needs. They offer a wide range of exclusive products that are manufactured with the highest quality materials and can be customized to meet your specific requirements. 
             </p>
             <button class="effectBtn">
+              <NuxtLink to="/enExclusive">
               <span> More Info </span>
+            </NuxtLink>
+
             </button>
           </div>
           <img src="/images/homeProduct1.png" alt="" />
@@ -50,7 +53,10 @@
               Aluminum with its silvery color and low specific weight has a very high application in industries. Based on the different properties of products and their uses, aluminum profiles can be produced in various dimensions and shapes. 
                </p>
             <button class="effectBtn">
+              <NuxtLink to="/enindustrial">
               <span> More Info </span>
+            </NuxtLink>
+
             </button>
           </div>
           <img src="/images/homeProduct3.png" alt="" />
@@ -64,7 +70,10 @@
               Today, one of the most diverse and commonly used aluminum parts in the construction industry is ingots and billets. Due to its resistance to corrosion and oxidation, aluminum is widely used for producing ingots and billets. 
                </p>
             <button class="effectBtn">
+              <NuxtLink to="/enConstruction">
               <span> More Info </span>
+            </NuxtLink>
+
             </button>
           </div>
           <img src="/images/homeProduct4.png" alt="" />

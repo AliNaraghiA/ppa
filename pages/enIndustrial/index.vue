@@ -4,12 +4,9 @@
             <Header lang="eng" @change="change" />
             <div class="topDiv">
                 <h3 class="mont">Products</h3>
-                <h1>محصولات صنعتی</h1>
+                <h1>Industrial products </h1>
                 <p>
-                    آلومینیوم با رنگ نقره‌ای و وزن مخصوص پایین، کاربرد بسیار
-                    بالایی در صنایع دارد.که بر اساس ویژگی‌های مختلف محصولات و
-                    نوع کاربرد آن‌ها می‌توان با اضافه کردن عناصر متفاوت آلیاژ
-                    های مختلفی را تولید کرد
+                    Aluminum with its silvery color and low specific weight has a very high application in industries. Based on the different properties of products and their uses, aluminum profiles can be produced in various dimensions and shapes. 
                 </p>
             </div>
 
@@ -27,9 +24,9 @@
                                 <p class="text">{{ item.text }}</p>
                             </div>
                             <router-link
-                                :to="`/industrial/${item.id}`"
+                                :to="`/enIndustrial/${item.id}`"
                                 class="effectBtn">
-                                <span>مشاهده</span>
+                                <span>info</span>
                             </router-link>
                         </div>
                         <img :src="item.image" alt="" />
@@ -44,9 +41,9 @@
                                 <p class="text">{{ item.text }}</p>
                             </div>
                             <router-link
-                                :to="`/industrial/${item.id}`"
+                                :to="`/enIndustrial/${item.id}`"
                                 class="effectBtn">
-                                <span>مشاهده</span>
+                                <span>info</span>
                             </router-link>
                         </div>
                     </div>
@@ -70,26 +67,26 @@ export default {
             language: "",
             industrial: [
                 {
-                    title: "میلگرد",
-                    text: "میله آلومینیوم (میلگرد آلومینیومی) یک میله‌ی فلزی نقره با چگالی پایین است. این فلز در صنایع مختلف کاربردهای زیادی دارد. عنصر اصلی این میله آلومینیوم است؛ اما بر اساس ویژگی‌های موردنیاز می‌توان آلیاژهای مختلفی از آن تولید کرد",
+                    title: "bar",
+                    text: "Aluminum rod (aluminum rebar) is a low-density silver metal rod. This metal has many applications in various industries. The main element of this aluminum rod is aluminum, but different alloys can be produced from it based on the required properties.",
                     id: "bar",
                     image: "/images/industrial1.png",
                 },
                 {
-                    title: "تسمه",
-                    text: "یک شمش توپر آلومینیومی است که در ساخت دستگیره و یراق مختلف استفاده میشود. این تسمه آلومینیوم تحت پرس فرم میگیرد و در دوحالت ساده و سه خط در بازار عرضه میگردد.",
+                    title: "belt",
+                    text: "A silver aluminum strip that is used in the construction of handles and various fittings. This aluminum belt is formed under pressure and is available in both plain and three-line variations in the market.",
                     id: "belt",
                     image: "/images/industrial2.png",
                 },
                 {
-                    title: "لوله",
-                    text: "امروزه لوله آلومینیومی و ورق آلومینیوم یکی از پر کاربردترین تجهیزاتی باشند که در صنایع بزرگ و کوچک و سبک و سنگین مورد استفاده قرار می­‌گیرند. ضخامت و اندازه­‌ی لوله آلومینیومی بر اساس کاربرد آن­‌ها تعیین می‌­گردد.",
+                    title: "pipe",
+                    text: "Nowadays, aluminum pipes and aluminum sheets are one of the most widely used equipment in both large and small, light and heavy industries. The thickness and size of aluminum pipes are determined based on their application.",
                     id: "pipe",
                     image: "/images/industrial3.png",
                 },
                 {
-                    title: "شش پر",
-                    text: "منظور از شش پر آلومینیوم، همان شش ضلعی است که با استفاده از آلیاژ های مورد نظر شما به صورت تو پر و اکسترود شده تولید می شوند که در اندازه های مختلف و با توجه به سفارش و نیاز شما به شما عرضه می شوند.",
+                    title: "hexagonal-kelly",
+                    text: "Hexagonal aluminum refers to the hexagonal shape that is produced in a T-shaped and extruded form using the desired alloys. They are available in various sizes and can be supplied to you based on your order and needs.",
                     id: "hexagonal-kelly",
                     image: "/images/industrial3.png",
                 },

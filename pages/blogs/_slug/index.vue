@@ -21,7 +21,7 @@
                             <h3 class="title">{{ post.title }}</h3>
                             <p class="text" v-html="post.content"></p>
                         </div>
-                        <div class="number">{{ post.postId }}</div>
+                        <div class="number"></div>
                     </div>
                 </div>
                 <!--           <div

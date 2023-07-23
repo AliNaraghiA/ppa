@@ -14,7 +14,7 @@
                 class="imgAndText d-flex justify-content-between align-items-center">
                 <p class="text" v-html="indust.description"></p>
                 <img :src="indust.mainimage.sourceUrl" :alt="indust.mainimage.altText"/>
-                        </div>
+            </div>
             <div class="diameter">
                 <div class="title">{{ indust.sizetitle }}</div>
                 <div class="allItems">
@@ -200,32 +200,32 @@ export default {
         try {
             const { data } = await app.apolloProvider.defaultClient.query({
                 query: gql`
-                    query indust1($slug: ID!) {
-                        industrial(id: $slug, idType: SLUG) {
-                            databaseId
-                            title
-                            slug
-                            acfindustrial {
-                                description
-                                title
-                                sizetitle
-                                mainimage {
-                                    altText
-                                    sourceUrl
-                                }
-                                repeater {
-                                    one
-                                    two
-                                    three
-                                    four
-                                }
-                                gallery {
-                                    altText
-                                    sourceUrl
-                                }
-                            }
-                        }
-                    }
+query indust1($slug: ID!) {
+  englishindustrial(id: $slug, idType: SLUG) {
+    databaseId
+    title
+    slug
+    acfindustrial {
+      description
+      title
+      sizetitle
+      mainimage {
+        altText
+        sourceUrl
+      }
+      repeater {
+        one
+        two
+        three
+        four
+      }
+      gallery {
+        altText
+        sourceUrl
+      }
+    }
+  }
+}
                 `,
                 variables: {
                     slug: params.slug,
@@ -233,10 +233,10 @@ export default {
             });
 
             return {
-                indust: data.industrial.acfindustrial,
-                repeater: data.industrial.acfindustrial.repeater,
-                gallery: data.industrial.acfindustrial.gallery,
-                mainimage: data.industrial.acfindustrial.mainimage,
+                indust: data.englishindustrial.acfindustrial,
+                repeater: data.englishindustrial.acfindustrial.repeater,
+                gallery: data.englishindustrial.acfindustrial.gallery,
+                mainimage: data.englishindustrial.acfindustrial.mainimage,
             };
         } catch (error) {
             console.error("Error fetching data:", error);

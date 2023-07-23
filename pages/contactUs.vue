@@ -29,7 +29,7 @@
             <img src="/icons/sms.svg" alt="" />
             <h2>E-mail</h2>
           </div>
-          <p>Info@peymanprofile.com</p>
+          <p>Info@ppa-co.ir</p>
           <div class="bordered d-flex align-items-center marginT">
             <img src="/icons/heart.svg" alt="" />
             <h2>Follow Us</h2>
@@ -120,7 +120,7 @@
             <img src="/icons/sms.svg" alt="" />
             <h2>ایمیل</h2>
           </div>
-          <p class="mont">Info@peymanprofile.com</p>
+          <p class="mont">Info@ppa-co.ir</p>
           <div class="bordered d-flex align-items-center marginT">
             <img src="/icons/heart.svg" alt="" />
             <h2>شبکه های اجتماعی</h2>

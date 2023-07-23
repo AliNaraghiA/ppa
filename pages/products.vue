@@ -18,7 +18,7 @@
       <div class="lineDiv">
         <Lines myVw="1920" myVh="100" />
       </div>
-      <div class="myUnits">
+      <div class="myUnits" style="min-width: 100%;">
         <section
           class="homeProduct1 d-flex align-items-center justify-content-between"
         >

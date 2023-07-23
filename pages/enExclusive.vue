@@ -4,18 +4,16 @@
             <Header lang="eng" @change="change" />
             <div class="topDiv">
                 <h3 class="mont">Products</h3>
-                <h1>محصولات اختصاصی</h1>
+                <h1>exclusive Products</h1>
                 <p>
-                    قابلیت محاسبه ، طراحی و ساخت قالب و همچنین مشاوره در خصوص
-                    ریخته گری و تولید .
+The ability to calculate, design, and manufacture molds, as well as consultation regarding casting and production.
                 </p>
             </div>
             <div class="lineDiv">
                 <Lines myVw="1920" myVh="100" />
             </div>
             <div class="formText">
-                برای سفارش مقاطع اختصاصی خود فرم زیر را تکمیل کنید، همکاران ما
-                در اسرع وقت برای راهنمایی بیشتر با شما تماس خواهند گرفت.
+                To place an order for custom profiles, please complete the form below. Our team will contact you as soon as possible for further guidance
             </div>
             <form @submit.prevent="submitForm">
                 <div class="d-flex justify-content-between flex-wrap">
@@ -23,29 +21,29 @@
                         type="text"
                         name="name"
                         v-model="name"
-                        placeholder="نام و نام خانوادگی *" />
+                        placeholder="Name*" />
                     <input
                         type="text"
                         name="work"
                         v-model="work"
-                        placeholder="حوزه کاری" />
+                        placeholder="Field of Work " />
                     <input
                         type="tell"
                         name="tell"
                         v-model="tell"
-                        placeholder="شماره تماس *" />
+                        placeholder="Telephone Numbers *" />
                     <input
                         type="email"
                         name="email"
                         v-model="email"
-                        placeholder="ایمیل" />
+                        placeholder="Email" />
                     <textarea
                         name="message"
                         v-model="message"
                         rows="4"
-                        placeholder="توضیحات"></textarea>
+                        placeholder="Message"></textarea>
                 </div>
-                <el-upload
+<!--                 <el-upload
                     ref="attachment"
                     @change="handleAttachment"
                     class="upload-demo"
@@ -60,13 +58,20 @@
                     </div>
                 </el-upload>
                 <div class="size">
-                    فایل پیوست نمی تواند بیش از
-                    <span> 5 مگابایت </span>
-                    باشد.
+                    Attachment cannot exceed 
+                    <span> 5 MB   </span>
+                    
                 </div>
                 <button class="effectBtn" type="submit">
-                    <span>ارسال</span>
-                </button>
+                    <span>SEND</span>
+                </button> -->
+                          <!--  -->
+          <input type="file" ref="attachment" @change="handleAttachment" />
+                     <div class="size">Attachment cannot exceed <span> 5 MB </span></div> 
+          <!--  -->
+          <button type="submit" class="effectBtn">
+            <span> SEND </span>
+          </button>
             </form>
             <div
                 style="color: red; ,font-size:flex-direction: ;;"
